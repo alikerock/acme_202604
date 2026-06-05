@@ -39,3 +39,23 @@ questions.forEach(q => {
   });
 });
 */
+const swiper = new Swiper(".portfolio .swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+const slideWrapper = document.querySelector(".portfolio"),
+  prevBtn = slideWrapper.querySelector(".prev"),
+  nextBtn = slideWrapper.querySelector(".next");
+
+nextBtn.addEventListener("click", () => {
+  swiper.slideNext();
+});
+prevBtn.addEventListener("click", () => {
+  swiper.slidePrev();
+});
