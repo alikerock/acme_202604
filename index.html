@@ -12,6 +12,7 @@
     />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
 
@@ -64,35 +65,37 @@
       <hr class="container" />
       <section class="testimonial slidewrapper container inner-pd">
         <h2 class="hidden">testimonial</h2>
-        <ul class="slidecontainer">
-          <li>
-            <blockquote>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum accusantium nulla
-                qui debitis dicta mollitia!
-              </p>
-            </blockquote>
-            <small>john doe</small>
-          </li>
-          <li>
-            <blockquote>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum accusantium nulla
-                qui debitis dicta mollitia!
-              </p>
-            </blockquote>
-            <small>jane</small>
-          </li>
-          <li>
-            <blockquote>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum accusantium nulla
-                qui debitis dicta mollitia!
-              </p>
-            </blockquote>
-            <small>tomas</small>
-          </li>
-        </ul>
+        <div class="swiper">
+          <ul class="slidecontainer swiper-wrapper">
+            <li class="swiper-slide">
+              <blockquote>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum accusantium nulla
+                  qui debitis dicta mollitia!
+                </p>
+              </blockquote>
+              <small>john doe</small>
+            </li>
+            <li class="swiper-slide">
+              <blockquote>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum accusantium nulla
+                  qui debitis dicta mollitia!
+                </p>
+              </blockquote>
+              <small>jane</small>
+            </li>
+            <li class="swiper-slide">
+              <blockquote>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum accusantium nulla
+                  qui debitis dicta mollitia!
+                </p>
+              </blockquote>
+              <small>tomas</small>
+            </li>
+          </ul>
+        </div>
         <button type="button" class="button prev">
           <span class="material-icons">chevron_left</span>
         </button>
@@ -112,6 +115,7 @@
       <p>&copy; 2014. All rights reserved. Questions?</p>
       <p>Email us at <a href="#" class="text-link">office@product.com</a></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
